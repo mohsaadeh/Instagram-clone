@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+<link rel="stylesheet" href="styling.css">
+<link rel="shortcut icon" href="image/Instagram_logo.png" type="image/x-icon" />
+<title>Instagram clone</title>
+<style>
+
+
+.stories img {
+  position: relative;
+  border-radius: 50px; 
+  border: 2px solid transparent;
+  background: linear-gradient(45deg,red,yellow) border-box;
+cursor: pointer;
+}
+
+.story-bar{
+    position: relative;
+}
+
+.story-next{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aliceblue;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:fit-content;
+    margin-top: 30px;
+}
+.container{
+    display: flex;
+}
+
+.Search{
+    width: 100%;
+    height: 70px;
+    background-color: red;
+    display: none;
+}
+
+.footer-bar{
+    width: 100%;
+    height: 70px;
+    background-color: red;
+    display: none;
+    position: fixed;
+    bottom: 0;
+}
+@media screen and (max-width:600px) {
+    .container{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+main{
+    width: 100%;
+    padding: 0;
+}
+aside{
+    display: none;
+}
+
+.suggestion{
+    display: none;
+}
+
+.content{
+    width: 100%;
+}
+
+.post{
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+.image{
+    height: 377px;
+    width: 100%;
+}
+.Search{
+
+    display: flex;
+}
+.footer-bar{
+display: flex;
+}
+}
+
+</style>
+</head>
+<body>
+    <div class="container" >
+<div class="Search">
+
+</div>
+
+<div class="footer-bar">
+
+</div>
+<aside>
+<div class="logo">
+<p>Instagram</p>
+</div>
+
+<div class="menu">
+<div><i class="las la-home"></i> <span>Home</span></div>
+<div><i class="las la-search"></i><span>Search</span></div>
+<div><i class="las la-compass"></i> <span>Explore</span></div>
+<div><i class="lab la-youtube"></i><span>Reels</span></div>
+<div><i class="lab la-telegram-plane"></i><span>Message</span></div>
+<div><i class="lar la-heart"></i><span>Notification</span></div>
+<div><i class="las la-plus-circle"></i><span>Create</span></div>
+<div class="profile">
+    <img src="image\download-removebg-preview.png">
+    <span>Profile</span>
+</div>
+</div>
+<div class="more"><i class="las la-bars"></i> <span>More</span></div>
+</aside>
+<main>
+    <div class="content">
+    <div class="story-bar">
+    <div class="stories">
+        <img src="image\1.png">
+        <p>user1</p>
+    </div>
+    <div class="stories">
+        <img src="image\4140037.png">
+        <p>user2</p>
+    </div>
+    <div class="stories">
+        <img src="image\4140048.png">
+        <p>user3</p>
+    </div>
+    <div class="stories">
+        <img src="image\4140037.png">
+        <p>user4</p>
+    </div>
+    <div class="stories">
+        <img src="image\PngItem_4644415.png">
+        <p>user5</p>
+    </div>
+    <div class="stories">
+        <img src="image\1.png">
+        <p>user6</p>
+    </div>
+    <div class="stories">
+        <img src="image\4140037.png">
+        <p>user7</p>
+    </div>
+    <div class="stories">
+        <img src="image\1.png">
+        <p>user8</p>
+    </div>
+
+    <div class="stories">
+        <img src="image\4140037.png">
+        <p>user9</p>
+    </div>
+
+    <div class="story-next">
+        <i class="las la-angle-right"></i>
+    </div>
+
+    </div>
+
+
+    <div class="post" >
+ 
+            <div style="display:flex; align-items: center;justify-content: space-between; width: 100%;">
+                <div style="display:flex; align-items: center;">
+                    <img src="image\4140048.png" alt="" style="width: 40px; height: 40px;">
+                    <span style="padding-left: 10px;">User name .</span> <span style="color: grey;padding-left: 5px;">9h</span>
+                </div>
+     
+
+                <p>...</p>
+ 
+</div>
+<div style="width: 100%;">
+    <img src="image\images.jpg" alt="" class="image" >
+    <div class="icon">
+        <i class="lar la-heart"></i>
+        <i class="las la-comment-alt"></i>
+        <i class="lab la-telegram"></i>
+        <p>3,335 likes</p>
+        <p>user name</p>
+    </div>
+
+</div>
+    </div>
+
+
+
+</div>
+    <div class="suggestion">
+        <div class="main-profile">
+            <img src="image\profileUser.png">
+            <div class="gray-text">
+            <span>Profile name</span>
+            <p>Lorem, ipsum</p>
+             </div>
+            <button>switch</button>
+        </div>
+        <div class="Sugg.option">
+        <p>Suggestion for you</p>
+        <button>See all</button>
+         </div>
+        <div class="sugg-profile" ><img src="image\4974985.png">
+            <div class="gray-text"><span>Profile name</span> 
+                <p>Lorem, ipsum</p>
+             </div> 
+            <button>Follow</button>
+        </div>
+        <div class="sugg-profile" ><img src="image\4974985.png">
+            <div class="gray-text"><span>Profile name</span> 
+                <p>Lorem, ipsum</p>
+             </div> 
+            <button>Follow</button>
+        </div>
+        <div class="sugg-profile" ><img src="image\4974985.png">
+            <div class="gray-text"><span>Profile name</span> 
+                <p>Lorem, ipsum</p>
+             </div> 
+            <button>Follow</button>
+        </div>
+        <div class="sugg-profile" ><img src="image\4974985.png">
+            <div class="gray-text"><span>Profile name</span> 
+                <p>Lorem, ipsum</p>
+             </div> 
+            <button>Follow</button>
+        </div>
+        <div class="sugg-profile" ><img src="image\4974985.png">
+            <div class="gray-text"><span>Profile name</span> 
+                <p>Lorem, ipsum</p>
+             </div> 
+            <button>Follow</button>
+        </div>
+        <div class="sugg-profile" ><img src="image\4974985.png">
+            <div class="gray-text"><span>Profile name</span> 
+                <p>Lorem, ipsum</p>
+             </div> 
+            <button>Follow</button>
+        </div>
+        <div class="sugg-profile" ><img src="image\4974985.png">
+            <div class="gray-text"><span>Profile name</span> 
+                <p>Lorem, ipsum</p>
+             </div> 
+            <button>Follow</button>
+        </div>
+        <div class="sugg-profile" ><img src="image\4974985.png">
+            <div class="gray-text"><span>Profile name</span> 
+                <p>Lorem, ipsum</p>
+             </div> 
+            <button>Follow</button>
+        </div>
+        <div class="sugg-profile" ><img src="image\4974985.png">
+            <div class="gray-text"><span>Profile name</span> 
+                <p>Lorem, ipsum</p>
+             </div> 
+            <button>Follow</button>
+        </div>
+    </div>
+</main>
+
+
+</div>
+</body>
+</html>
